@@ -16,7 +16,7 @@ class api(models.Model):
     last_updated = models.DateTimeField(auto_now=True, editable=False)
     Keywords = models.TextField(max_length=65535)
     Status = models.TextField(max_length=255)
-    uuid = models.TextField(max_length=100)
+    uuid = models.UUIDField()
     location = models.TextField(max_length=255)
 
 
